@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = 'http://localhost:5000'
+const baseUrl = 'http://danijel.pythonanywhere.com'
 
 class CalculatorService {
     async solveWithAll(equation, downLimit, upperLimit, subintervals) {
