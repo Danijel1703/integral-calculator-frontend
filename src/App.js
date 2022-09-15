@@ -86,7 +86,12 @@ function App() {
       grid: true,
       data: [{
         fn: expression !== ''  ? expression : '0',
+        range: [downLimit, upperLimit],
+        closed: true
       }],
+      xAxis: {
+        domain: [downLimit, upperLimit]
+      },
       target: '#function--graph'
     })
   }
