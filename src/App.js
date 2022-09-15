@@ -18,7 +18,6 @@ function App() {
 
   const formattedEquation = equation.replace('/', '//')
   const methods = ['trapez', 'simpsons']
-
   useEffect(() => {
     setExpression('')
   }, [])
@@ -107,7 +106,7 @@ function App() {
         <h1 className='flex--column--center height--full'>Integral kalkulator</h1>
       </div>
       <div className='function--input--box flex--column--center'>
-        <p className='text--width--lg'>Unesite funkciju koju želite integrirati:</p>
+        <p className='text--width--lg'>Unesite funkciju koja je integrabilna na zadanom području:</p>
         <div className='function--input' style={{ position: 'relative' }}>
           <math-field 
             id="formula" 
